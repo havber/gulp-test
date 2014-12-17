@@ -1,11 +1,14 @@
 {
-    "browserify": {
-        "transform": ["cssify"]
-    },
-    "devDependencies": {
-        "browserify": "^7.0.2",
-        "cssify": "^0.6.0",
-        "gulp": "^3.8.10",
-        "vinyl-transform": "^1.0.0"
+  "browserify": {
+    "transform": [
+      "cssify"
+    ]
+  },
+  "devDependencies": {
+    "browserify": "^7.0.2",
+    "cssify": "^0.6.0",
+    "gulp": "^3.8.10",
+    "tag": "^0.1.0",
+    "vinyl-transform": "^1.0.0"
   }
 }
