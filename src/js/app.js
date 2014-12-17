@@ -7,5 +7,5 @@ var styleNode = require('../css/styles.css'),
     content = document.querySelector('#content');
 
 content.appendChild(tag.div(
-    tag.h1('Hepparoo!')
+    tag.h1('Hepp!')
 ));

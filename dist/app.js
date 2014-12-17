@@ -405,7 +405,7 @@ module.exports.undef = function(variable) {
 };
 
 },{}],7:[function(require,module,exports){
-var css = "body {\n  background-color: #993300;\n  color: #000;\n}\n"; (require("/Users/havber/github/gulp-test/node_modules/cssify"))(css); module.exports = css;
+var css = "body {\n  margin: 0;\n  color: #000;\n  font-family: \"Helvetica Neue\" sans-serif;\n}\n\nheader {\n  background-color: #993300;\n  color: #fff;\n  padding: 40px;\n  font-size: 30px;\n  border-top: 10px solid #997700;\n}\n"; (require("/Users/havber/github/gulp-test/node_modules/cssify"))(css); module.exports = css;
 },{"/Users/havber/github/gulp-test/node_modules/cssify":1}],8:[function(require,module,exports){
 /*jshint node: true*/
 /*global document*/
@@ -416,7 +416,7 @@ var styleNode = require('../css/styles.css'),
     content = document.querySelector('#content');
 
 content.appendChild(tag.div(
-    tag.h1('Hepparoo!')
+    tag.h1('Hepp!')
 ));
 
 },{"../css/styles.css":7,"tag":3}]},{},[8]);

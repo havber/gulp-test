@@ -1,7 +1,7 @@
 var gulp       = require('gulp'),
     browserify = require('browserify'),
     transform  = require('vinyl-transform'),
-    cssify     = require('cssify');
+    livereload = require('gulp-livereload');
 
 gulp.task('browserify', function () {
     var browserified = transform(function(filename) {
@@ -11,6 +11,11 @@ gulp.task('browserify', function () {
 
     return gulp.src(['./src/js/*.js'])
         .pipe(browserified)
-        .pipe(cssify())
-        .pipe(gulp.dest('./dist'));
+        .pipe(gulp.dest('./dist')).
+        pipe(livereload());
+});
+
+gulp.task('watch', function() {
+    livereload.listen();
+    gulp.watch('src/**/*', ['browserify']);
 });
