@@ -413,10 +413,15 @@ var css = "body {\n  margin: 0;\n  color: #000;\n  font-family: \"Helvetica Neue
 
 var styleNode = require('../css/styles.css'),
     tag = require('tag'),
-    content = document.querySelector('#content');
+    body = document.body;
 
-content.appendChild(tag.div(
-    tag.h1('Hepp!')
+body.appendChild(
+    tag.header('This is the header!')
+);
+
+body.appendChild(tag.div(
+    {cls: 'js-content'},
+    tag.h1('This is a H1-tag')
 ));
 
 },{"../css/styles.css":7,"tag":3}]},{},[8]);

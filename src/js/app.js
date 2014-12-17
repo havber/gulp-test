@@ -4,8 +4,13 @@
 
 var styleNode = require('../css/styles.css'),
     tag = require('tag'),
-    content = document.querySelector('#content');
+    body = document.body;
 
-content.appendChild(tag.div(
-    tag.h1('Hepp!')
+body.appendChild(
+    tag.header('This is the header!')
+);
+
+body.appendChild(tag.div(
+    {cls: 'js-content'},
+    tag.h1('This is a H1-tag')
 ));
