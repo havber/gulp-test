@@ -1,7 +1,7 @@
-var gulp       = require('gulp');
-var browserify = require('browserify');
-var transform  = require('vinyl-transform');
-var cssify     = require('cssify');
+var gulp       = require('gulp'),
+    browserify = require('browserify'),
+    transform  = require('vinyl-transform'),
+    cssify     = require('cssify');
 
 gulp.task('browserify', function () {
     var browserified = transform(function(filename) {
