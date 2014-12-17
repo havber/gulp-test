@@ -1,6 +1,4 @@
 (function e(t,n,r){function s(o,u){if(!n[o]){if(!t[o]){var a=typeof require=="function"&&require;if(!u&&a)return a(o,!0);if(i)return i(o,!0);var f=new Error("Cannot find module '"+o+"'");throw f.code="MODULE_NOT_FOUND",f}var l=n[o]={exports:{}};t[o][0].call(l.exports,function(e){var n=t[o][1][e];return s(n?n:e)},l,l.exports,e,t,n,r)}return n[o].exports}var i=typeof require=="function"&&require;for(var o=0;o<r.length;o++)s(r[o]);return s})({1:[function(require,module,exports){
-var css = "body {\n  background-color: #993300;\n  color: #fff;\n}\n"; (require("/Users/havber/github/gulp-test/node_modules/cssify"))(css); module.exports = css;
-},{"/Users/havber/github/gulp-test/node_modules/cssify":2}],2:[function(require,module,exports){
 module.exports = function (css, customDocument) {
   var doc = customDocument || document;
   if (doc.createStyleSheet) {
@@ -39,7 +37,7 @@ module.exports.byUrl = function(url) {
   }
 };
 
-},{}],3:[function(require,module,exports){
+},{}],2:[function(require,module,exports){
 /* jshint node: true, strict: true */
 /* global window: true */
 
@@ -125,7 +123,7 @@ module.exports = function(tag, doc){
 
 };
 
-},{"./utils.js":6,"is":7}],4:[function(require,module,exports){
+},{"./utils.js":5,"is":6}],3:[function(require,module,exports){
 /* jshint node: true, strict: true */
 
 "use strict";
@@ -133,7 +131,7 @@ module.exports = function(tag, doc){
 var Tag = require('./tag.js');
 module.exports = new Tag();
 
-},{"./tag.js":5}],5:[function(require,module,exports){
+},{"./tag.js":4}],4:[function(require,module,exports){
 /* jshint node: true, strict: true */
 
 "use strict";
@@ -165,7 +163,7 @@ module.exports = function(doc){
     }.bind(this));
 };
 
-},{"./builder.js":3}],6:[function(require,module,exports){
+},{"./builder.js":2}],5:[function(require,module,exports){
 /* jshint node: true, strict: true */
 /* global window: true */
 
@@ -277,7 +275,7 @@ module.exports.getDocument = function(doc) {
     return null;
 };
 
-},{}],7:[function(require,module,exports){
+},{}],6:[function(require,module,exports){
 /* jshint node: true, strict: true */
 
 /** @module is */
@@ -406,7 +404,9 @@ module.exports.undef = function(variable) {
     return variable === void(0);
 };
 
-},{}],8:[function(require,module,exports){
+},{}],7:[function(require,module,exports){
+var css = "body {\n  background-color: #993300;\n  color: #000;\n}\n"; (require("/Users/havber/github/gulp-test/node_modules/cssify"))(css); module.exports = css;
+},{"/Users/havber/github/gulp-test/node_modules/cssify":1}],8:[function(require,module,exports){
 /*jshint node: true*/
 /*global document*/
 "use strict";
@@ -419,4 +419,4 @@ content.appendChild(tag.div(
     tag.h1('Hepparoo!')
 ));
 
-},{"../css/styles.css":1,"tag":4}]},{},[8]);
+},{"../css/styles.css":7,"tag":3}]},{},[8]);

@@ -9,7 +9,7 @@ gulp.task('browserify', function () {
         return b.bundle();
     });
 
-    return gulp.src(['./src/*.js'])
+    return gulp.src(['./src/js/*.js'])
         .pipe(browserified)
         .pipe(cssify())
         .pipe(gulp.dest('./dist'));
